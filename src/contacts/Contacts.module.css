@@ -1,0 +1,23 @@
+.contactsBlock {
+    background-color: wheat;
+
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactsForm {
+    width: 280px;
+    height: 150px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.title{
+    background-color: lightslategray;
+}
