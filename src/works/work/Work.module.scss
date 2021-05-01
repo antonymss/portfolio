@@ -1,0 +1,78 @@
+@import "../../common/styles/sass/variables";
+@import '../../common/styles/sass/mixins';
+
+.work {
+  width: 250px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+  .image {
+    width: 250px;
+    height: 250px;
+    background-color: $bgSecondColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: $bgColor;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+    .viewBtn {
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+      background-color: $primaryColor;
+      color: $textColor;
+    }
+  }
+
+  .workContent {
+    width: 250px;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+
+    .projectTitle {
+      @include text(('Josefin Sans', 'sans-serif'), 16px, 1.2);
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+    }
+
+    .text {
+      background-color: $bgColor;
+      @include text(('Poppins', sans-serif), 12px, 1.8);
+      font-weight: 400;
+      //font-family: 'Poppins', sans-serif;
+      //line-height: 1.8;
+      //font-size: 12px;
+      //color: $textColor;
+    }
+  }
+}
+
+
+
+
+
+
+
